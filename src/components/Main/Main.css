@@ -1,0 +1,22 @@
+.input-field {
+  border: 1px solid purple;
+  border-radius: 4;
+  padding: 9px;
+}
+
+.food-item {
+  display: grid;
+  /* grid-template-columns: repeat(4,auto); */
+  text-align: center;
+  grid-gap: 30px;
+}
+@media (min-width: 600px) {
+  .food-item {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (min-width: 900px) {
+  .food-item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
